@@ -1,0 +1,22 @@
+1）ローカルリポジトリを作成する
+$ git init
+
+2）ローカルリポジトリにファイルの変更点を追加（インデックスに追加）
+$ git add ファイル名
+
+3）ローカルリポジトリにインデックスに追加したファイルを登録
+$ git commit -m "変更点などのコメント"
+
+4）追加したインデックス（ファイルの変更点など）をGitHubに作成
+$ git remote add origin リポジトリのURI
+
+5）ローカルリポジトリのファイルをGitHubのリポジトリに送信
+$ git push origin master
+
+ファイル名の変更
+$ git mv a.txt new_a.txt
+$ git status
+
+ファイルの追跡
+$ git log --follow new_b.txt
+
